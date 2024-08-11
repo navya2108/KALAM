@@ -1,0 +1,223 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Main Layout */
+body {
+    font-family: 'Playfair Display Medium', serif;
+    color: #333;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #e0f7fa, #ffffff);
+    overflow-y: scroll;
+}
+
+.index-body {
+    background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+}
+
+header {
+    background: linear-gradient(to right, rgba(0, 61, 91, 0.8), rgba(33, 150, 243, 0.8));
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3.5em;
+    letter-spacing: 2px;
+    animation: slideIn 1s ease-out;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    animation: fadeIn 1s ease-out 0.5s;
+    animation-fill-mode: backwards;
+}
+
+nav ul li {
+    margin: 0 20px;
+    transition: transform 0.3s;
+    animation: bounceIn 1s ease-out;
+}
+
+nav ul li:nth-child(1) {
+    animation-delay: 0.6s;
+}
+
+nav ul li:nth-child(2) {
+    animation-delay: 0.8s;
+}
+
+nav ul li:nth-child(3) {
+    animation-delay: 1s;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3em;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+nav ul li:hover {
+    transform: translateY(-5px);
+}
+
+main {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-out;
+}
+
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s, transform 1s;
+}
+
+section.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+section h2 {
+    font-size: 2.5em;
+    border-bottom: 3px solid #1f7a8c;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #1f7a8c;
+    letter-spacing: 1px;
+    animation: slideIn 1s ease-out;
+}
+
+.about-container, .book-container, .book-detail-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    animation: fadeIn 1.5s ease-out;
+}
+
+.about-item, .book-item, .book-detail-info {
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #ffffff, #f0f0f0);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    animation: zoomIn 0.6s ease-out;
+}
+
+.about-item:hover, .book-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.about-img, .book-img, .book-detail-img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.book-detail-img {
+    width: 320px;
+    height: auto;
+    border-radius: 0;
+}
+
+.about-text, .book-title {
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    60% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+footer {
+    background: linear-gradient(to right, rgba(0, 61, 91, 0.8), rgba(33, 150, 243, 0.8));
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    animation: fadeIn 1s ease-out;
+}
+
+.btn {
+    background-color: #1f7a8c;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    animation: fadeIn 1.5s ease-out;
+}
+
+.btn:hover {
+    background-color: #145760;
+    transform: translateY(-5px);
+}

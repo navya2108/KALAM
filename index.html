@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KALAM</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            font-family: 'Playfair Display Medium', serif;
+            color: #333;
+            background: linear-gradient(135deg, #e0f7fa 0%, #e5fcff 100%);
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: rgba(0, 61, 91, 0.9);
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .header-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo {
+            height: 80px;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 3em;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            color: white;
+            font-size: 1.2em;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #1f7a8c;
+        }
+
+        main {
+            padding: 50px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-size: 2.5em;
+            color: #145760;
+            margin-bottom: 20px;
+            position: relative;
+            display: inline-block;
+        }
+
+        h2::after {
+            content: '';
+            width: 80px;
+            height: 4px;
+            background-color: #1f7a8c;
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        #publish, #about, #testimonials, #contact {
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        #publish .btn, #contact .btn {
+            background-color: #145760;
+            color: #ffffff;
+            font-size: 1.2em;
+            padding: 15px 30px;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        #publish .btn:hover, #contact .btn:hover {
+            background-color: #1f7a8c;
+            transform: translateY(-5px);
+        }
+
+        #about .about-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .about-item {
+            max-width: 300px;
+            text-align: left;
+        }
+
+        .about-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .about-text {
+            font-size: 1.1em;
+            color: #333333;
+            line-height: 1.6;
+        }
+
+        #testimonials p {
+            font-size: 1.2em;
+            color: #333333;
+            line-height: 1.6;
+            margin: 0 auto;
+            max-width: 800px;
+        }
+
+        #contact form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        #contact label {
+            display: block;
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            color: #145760;
+            text-align: left;
+        }
+
+        #contact input[type="text"],
+        #contact input[type="email"],
+        #contact textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 2px solid #1f7a8c;
+            border-radius: 10px;
+            font-size: 1.1em;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        footer {
+            background: #145760;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body class="index-body">
+    <header>
+        <div class="header-content">
+            <img src="logo.png" alt="Logo" class="logo">
+            <h1>KALAM</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="bookstore.html">Bookstore</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="publish">
+            <h2>Publish Your Work</h2>
+           <br>  <a href="https://forms.gle/ptV7NKZVWNf9PfDv9" class="btn">Click here to submit</a>
+        </section>
+        <section id="about">
+            <h2>The Team</h2>
+            <div class="about-container">
+                <div class="about-item">
+                    <img src="about-me.png" alt="Shubhi Agarwal" class="about-img">
+                    <p class="about-text"><strong>Shubhi Agarwal</strong><br>Co-Founder<br>Meet Shubhi Agarwal, a passionate literature enthusiast dedicated to democratizing storytelling through Kalam. With a deep love for diverse narratives and a commitment to amplifying unheard voices, Shubhi brings vision and creativity to our initiative, championing writers and fostering a thriving literary community.
+                    </p>
+                </div>
+                <div class="about-item">
+                    <img src="about-me2.png" alt="Syna Karnani" class="about-img">
+                    <p class="about-text"><strong>Syna Karnani</strong><br>Co-Founder<br>Meet Syna Karnani, an economics enthusiast with a passion for literature. Combining analytical skills with a love for storytelling, she co-founded Kalam to support and amplify diverse voices in the literary world. Her vision drives our mission to make publishing accessible and free for all writers.</p>
+                </div>
+            </div>
+        </section>
+        <section id="testimonials">
+            <h2>Testimonials</h2>
+            <p>"Being part of Kalam has been an incredible journey. As a writer, I’ve always sought a platform that values both creativity and inclusivity, and Kalam has exceeded my expectations. Their commitment to providing a space for diverse voices and ensuring equitable access to quality education is truly remarkable. Kalam’s support has not only helped me refine my work but also given me the confidence to share my stories with a wider audience. The nurturing environment they create allows writers like me to flourish and connect with readers who appreciate the depth and diversity of our narratives. I am deeply grateful for Kalam’s role in my growth as a writer and for their dedication to promoting meaningful literature. Their efforts make a significant impact, and I am honored to be part of a community that celebrates and elevates every voice."</p>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit" class="btn">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 KALAM. All rights reserved.</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

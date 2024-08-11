@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Kalam</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #e0f7fa 0%, #e5fcff 100%);
+        }
+
+        header {
+            background: linear-gradient(to right, #002f4b, #145760);
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            color: white;
+            font-size: 1.2em;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #1f7a8c;
+        }
+
+        .about-content {
+            padding: 50px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .about-content h2 {
+            font-size: 2.5em;
+            color: #145760;
+            margin-bottom: 20px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .about-content h2::after {
+            content: '';
+            width: 80px;
+            height: 4px;
+            background-color: #1f7a8c;
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .about-content p {
+            font-size: 1.2em;
+            color: #333333;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        footer {
+            background: #145760;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="logo.png" alt="Logo" class="logo">
+            <h1>KALAM</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="bookstore.html">Bookstore</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="about-content">
+            <h2>About Us</h2>
+            <p>Welcome to Kalam, a platform dedicated to celebrating and publishing diverse voices in literature; a reflection of our unwavering commitment to "Reduced Inequalities" (SDG 10). We offer writers a unique opportunity to share their work with the world, completely free of charge. Submit your poetry, short stories, essays, or any form of literary expression through this form. Our team is passionate about giving a voice to every writer, regardless of background or experience. Join us in creating a vibrant literary community where creativity knows no bounds. We look forward to reading your work and helping you reach a broader audience. Happy writing!</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 KALAM. All rights reserved.</p>
+    </footer>
+</body>
+</html>
